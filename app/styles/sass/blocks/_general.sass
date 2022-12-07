@@ -1,0 +1,67 @@
+a
+  text-decoration: none
+
+.button
+  padding: 10px 26px
+  background: $accent
+  font-weight: 500
+  font-size: 18px
+  line-height: 24px
+  text-align: center
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  color: white
+
+.button.line
+  background: none
+  border: 1px solid #fff
+
+h2.title
+  font-weight: 400
+  font-size: 42px
+  line-height: 56px
+  text-transform: uppercase
+
+.slick-arrows
+  width: 69px
+  height: 69px
+.slick-prev
+  left: -88px
+.slick-next
+  right: -88px
+
+.success
+  position: fixed
+  left: 0
+  top: 0
+  display: none
+  height: 100%
+  width: 100%
+  z-index: -1
+  background: rgba(231, 158, 48, 0.8)
+  backdrop-filter: blur(12px)
+  opacity: 0
+  pointer-events: none
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  transition: all 0.3s ease
+  p
+    font-weight: 400
+    font-size: 42px
+    line-height: 56px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 50px
+  .button
+    font-weight: 500
+    font-size: 36px
+    line-height: 48px
+    color: white
+    background: #000
+
+
+.success.active
+  z-index: 200
+  pointer-events: all
+  opacity: 1
