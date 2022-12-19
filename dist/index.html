@@ -24,11 +24,11 @@
 <header>
 	<div class="top-line__wrapper">
   <div class="container-fluid">
-    <div class="row justify-content-between">
-      <div class="col-lg-5">
+    <div class="row justify-content-between align-items-center-mobile">
+      <div class="col-10 col-xl-5 col-lg-7">
         <img src="images/dist/logo.svg" alt="">
       </div>
-      <div class="col-lg-4 social">
+      <div class="col-lg-4 social d-none d-lg-flex">
         <span>
           <a href="#">+7 (910) 340 80 09</a>
           <a href="https://vk.com/msilyutina"><img src="images/dist/vk.svg" alt=""></a>
@@ -36,10 +36,17 @@
         </span>
         <a href="#form" class="button">ЗАКАЗАТЬ ЗВОНОК</a>
       </div>
+      <div class="d-block d-lg-none col-2">
+        <svg class="burger" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="3" rx="1.5" fill="#87A4D0"/>
+          <rect y="7" width="24" height="3" rx="1.5" fill="#87A4D0"/>
+          <rect y="14" width="24" height="3" rx="1.5" fill="#87A4D0"/>
+        </svg>          
+      </div>
     </div>
   </div>
 </div>
-<div class="menu__wrapper default">
+<div class="menu__wrapper default d-none d-lg-block">
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12">
@@ -54,6 +61,43 @@
             <li><a href="#form">КОНТАКТЫ</a></li>
           </ul>
         </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="menu-modal">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-10">
+        <img src="images/dist/logo.svg" alt="">
+      </div>
+      <div class="col-2">
+        <svg class="close" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2.12109" width="24" height="3" rx="1.5" transform="rotate(45 2.12109 0)" fill="#87A4D0"/>
+          <rect y="17.0165" width="24" height="3" rx="1.5" transform="rotate(-45 0 17.0165)" fill="#87A4D0"/>
+        </svg>          
+      </div>
+      <div class="col-12">
+        <nav>
+          <ul>
+            <li><a href="#who">ДЛЯ КОГО</a></li>
+            <li><a href="#about">О ПРОЕКТЕ</a></li>
+            <li><a href="#event">СКОРО</a></li>
+            <li><a href="#press">СМИ О НАС</a></li>
+            <li><a href="#gallery">ФОТОГАЛЕРЕЯ</a></li>
+            <li><a href="#reviews">ОТЗЫВЫ</a></li>
+            <li><a href="#form">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-12 social">
+        <span>
+          <a href="#">+7 (910) 340 80 09</a>
+          <a href="https://vk.com/msilyutina"><img src="images/dist/vk.svg" alt=""></a>
+          <a href="t.me/gallery_vrn"><img src="images/dist/tg.svg" alt=""></a>
+        </span>
+        <a href="#form" class="button">ЗАКАЗАТЬ ЗВОНОК</a>
       </div>
     </div>
   </div>
@@ -96,7 +140,7 @@
 	<div class="mission__wrapper" id="who">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-lg-5 d-flex justify-content-center flex-column">
+      <div class="col-xl-5 col-lg-10 d-flex justify-content-center flex-column">
         <h2 class="title">ДЛЯ КОГО</h2>
         <ul>
           <li>Для художников, хэндмэйд мастеров, которые стремятся участвовать в выставках</li>
@@ -113,14 +157,14 @@
 	<div class="about__wrapper" id="about">
   <div class="container-fluid">
     <div class="row">
-      <div class="offset-lg-2 col-lg-7">
+      <div class="offset-xl-2 col-xl-7 offset-lg-1 col-lg-10">
         <h2 class="title">О ПРОЕКТЕ</h2>
         <p class="subtitle">Галерея современного искусства «Воронеж живописный» – это не только картины российских художников и хэндмэйд творения мастеров.</p>
       </div>
-      <div class="offset-lg-2 col-lg-7">
+      <div class="offset-xl-2 col-xl-7 offset-lg-1 col-lg-10">
         <div class="bigtitle">Это особое<br> АРТ-ПРОСТРАНСТВО</div>
       </div>
-      <div class="offset-lg-2 col-lg-5">
+      <div class="offset-xl-2 col-xl-5 offset-lg-1 col-lg-6 ">
         <p class="p1">Наша деятельность направлена, в первую очередь, на решение социальных вопросов:</p>
         <ul>
           <li>популяризацию современного искусства </li>
@@ -145,11 +189,11 @@
 </div>
 	<div class="events__wrapper" id="event">
   <div class="container-fluid">
-    <div class="row">
-      <div class="offset-lg-2 col-lg-8">
+    <div class="row jcc">
+      <div class="col-10 offset-xl-2 col-xl-8 offset-lg-1 col-lg-9">
         <h2 class="title">БЛИЖАЙШИЕ СОБЫТИЯ</h2>
       </div>
-      <div class="offset-lg-2 col-lg-8">
+      <div class="col-10 offset-xl-2 col-xl-8 offset-lg-1 col-lg-9">
         <div class="accordion">
 
           <div class="accordion-item active row">
@@ -160,21 +204,21 @@
             </div>
             <div class="content col-lg-9" style="display: block">
               <div class="content_wrapper row">
-                <div class="block col-lg-5">
+                <div class="block col-xl-5 col-lg-6">
                   <div class="date"><span>12</span>16:00 - 18:00</div>
                   <img src="images/dist/event.png" alt="">
                   <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                   <p>Воронеж, Дом Архитектора</p>
                   <a href="#form" class="button line">ЗАПИСАТЬСЯ</a>
                 </div>
-                <div class="block col-lg-5">
+                <div class="block col-xl-5 col-lg-6">
                   <div class="date"><span>12</span>16:00 - 18:00</div>
                   <img src="images/dist/event.png" alt="">
                   <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                   <p>Воронеж, Дом Архитектора</p>
                   <a href="#form" class="button line">ЗАПИСАТЬСЯ</a>
                 </div>
-                <div class="block col-lg-5">
+                <div class="block col-xl-5 col-lg-6">
                   <div class="date"><span>12</span>16:00 - 18:00</div>
                   <img src="images/dist/event.png" alt="">
                   <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
@@ -193,21 +237,21 @@
             </div>
             <div class="content col-lg-9">
               <div class="content_wrapper row">
-                <div class="block col-lg-5">
+                <div class="block col-xl-5 col-lg-6">
                   <div class="date"><span>12</span>16:00 - 18:00</div>
                   <img src="images/dist/event.png" alt="">
                   <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                   <p>Воронеж, Дом Архитектора</p>
                   <a href="#form" class="button line">ЗАПИСАТЬСЯ</a>
                 </div>
-                <div class="block col-lg-5">
+                <div class="block col-xl-5 col-lg-6">
                   <div class="date"><span>12</span>16:00 - 18:00</div>
                   <img src="images/dist/event.png" alt="">
                   <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                   <p>Воронеж, Дом Архитектора</p>
                   <a href="#form" class="button line">ЗАПИСАТЬСЯ</a>
                 </div>
-                <div class="block col-lg-5">
+                <div class="block col-xl-5 col-lg-6">
                   <div class="date"><span>12</span>16:00 - 18:00</div>
                   <img src="images/dist/event.png" alt="">
                   <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
@@ -226,21 +270,21 @@
             </div>
             <div class="content col-lg-9">
               <div class="content_wrapper row">
-                <div class="block col-lg-5">
+                <div class="block col-xl-5 col-lg-6">
                   <div class="date"><span>12</span>16:00 - 18:00</div>
                   <img src="images/dist/event.png" alt="">
                   <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                   <p>Воронеж, Дом Архитектора</p>
                   <a href="#form" class="button line">ЗАПИСАТЬСЯ</a>
                 </div>
-                <div class="block col-lg-5">
+                <div class="block col-xl-5 col-lg-6">
                   <div class="date"><span>12</span>16:00 - 18:00</div>
                   <img src="images/dist/event.png" alt="">
                   <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                   <p>Воронеж, Дом Архитектора</p>
                   <a href="#form" class="button line">ЗАПИСАТЬСЯ</a>
                 </div>
-                <div class="block col-lg-5">
+                <div class="block col-xl-5 col-lg-6">
                   <div class="date"><span>12</span>16:00 - 18:00</div>
                   <img src="images/dist/event.png" alt="">
                   <div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
@@ -259,45 +303,45 @@
 	<div class="press__wrapper" id="press">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-8 offset-lg-2">
+      <div class="col-lg-8 offset-xl-2 offset-lg-1">
         <h2 class="title">СМИ О НАС</h2>
       </div>
-      <div class="col-lg-2 offset-lg-2">
+      <div class="col-xl-2 col-lg-4 offset-xl-2 offset-lg-1">
         <div class="date">30 ноября 2022</div>
         <div class="title">Интерфакс</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
       </div>
-      <div class="col-lg-2">
+      <div class="col-xl-2 col-lg-4">
         <div class="date">30 ноября 2022</div>
         <div class="title">Интерфакс</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
       </div>
-      <div class="col-lg-2">
+      <div class="col-xl-2 col-lg-4 offset-lg-1 offset-xl-0">
         <div class="date">30 ноября 2022</div>
         <div class="title">Интерфакс</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
       </div>
-      <div class="col-lg-2">
+      <div class="col-xl-2 col-lg-4">
         <div class="date">30 ноября 2022</div>
         <div class="title">Интерфакс</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
       </div>
-      <div class="col-lg-2 offset-lg-2">
+      <div class="col-xl-2 col-lg-4 offset-xl-2 offset-lg-1">
         <div class="date">30 ноября 2022</div>
         <div class="title">Интерфакс</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
       </div>
-      <div class="col-lg-2">
+      <div class="col-xl-2 col-lg-4">
         <div class="date">30 ноября 2022</div>
         <div class="title">Интерфакс</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
       </div>
-      <div class="col-lg-2">
+      <div class="col-xl-2 col-lg-4 offset-lg-1 offset-xl-0">
         <div class="date">30 ноября 2022</div>
         <div class="title">Интерфакс</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
       </div>
-      <div class="col-lg-2">
+      <div class="col-xl-2 col-lg-4">
         <div class="date">30 ноября 2022</div>
         <div class="title">Интерфакс</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
@@ -308,24 +352,27 @@
 	<div class="painters__wrapper" id="gallery">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-lg-8">
+      <div class="col-xl-8 col-lg-10 col-10">
+        <h2 class="title">НАШИ ХУДОЖНИКИ</h2>
         <div class="painters_slider">
 
           <div class="item">
-            <img src="images/dist/slide.png" alt="">
+            <img class="d-none d-lg-block" src="images/dist/slide.png" alt="">
             <span>
               <div class="title">«Астры»</div>
               <div class="info">Бойченко В <br>хм 53х64</div>
+              <img class="d-lg-none d-block" src="images/dist/slide.png" alt="">
               <a href="#form" class="button">Узнать стоимость</a>
             </span>
           </div>
 
           
           <div class="item">
-            <img src="images/dist/slide.png" alt="">
+            <img class="d-none d-lg-block" src="images/dist/slide.png" alt="">
             <span>
               <div class="title">«Астры»</div>
               <div class="info">Бойченко В <br>хм 53х64</div>
+              <img class="d-lg-none d-block" src="images/dist/slide.png" alt="">
               <a href="#form" class="button">Узнать стоимость</a>
             </span>
           </div>
@@ -338,25 +385,27 @@
 <div class="painters__wrapper1">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-lg-8">
+      <div class="col-lg-10 col-xl-8 col-10">
         <h2 class="title">НАШИ МАСТЕРА</h2>
         <div class="painters_slider">
 
           <div class="item">
-            <img src="images/dist/slide.png" alt="">
+            <img class="d-none d-lg-block" src="images/dist/slide.png" alt="">
             <span>
               <div class="title">«Астры»</div>
               <div class="info">Бойченко В <br>хм 53х64</div>
+              <img class="d-lg-none d-block" src="images/dist/slide.png" alt="">
               <a href="#form" class="button">Узнать стоимость</a>
             </span>
           </div>
 
           
           <div class="item">
-            <img src="images/dist/slide.png" alt="">
+            <img class="d-none d-lg-block" src="images/dist/slide.png" alt="">
             <span>
               <div class="title">«Астры»</div>
               <div class="info">Бойченко В <br>хм 53х64</div>
+              <img class="d-lg-none d-block" src="images/dist/slide.png" alt="">
               <a href="#form" class="button">Узнать стоимость</a>
             </span>
           </div>
@@ -378,7 +427,7 @@
 	<div class="events_past__wrapper">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-lg-8">
+      <div class="col-xl-8 col-lg-10 col-10">
         <h2 class="title">НАШИ МЕРОПРИЯТИЯ</h2>
         <div class="event_slider">
 
@@ -395,7 +444,7 @@
 	<div class="reviews__wrapper" id="reviews">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-lg-8 offset-lg-2">
+      <div class="col-10 col-xl-8 offset-xl-2 col-lg-8 offset-lg-1">
         <h2 class="title">О НАС ГОВОРЯТ</h2>
         <div class="reviews_slider">
           <div class="item">
@@ -415,7 +464,7 @@
 	<div class="form__wrapper" id="form">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-lg-8 offset-lg-2">
+      <div class="col-12 col-xl-8 offset-xl-2 col-lg-10">
         <h2 class="title">Есть вопросы?<br> Мы с удовольствием ответим!</h2>
         <form action="">
           <input type="text" required placeholder="Имя:" name="fio">
@@ -444,21 +493,27 @@
 	<div class="contact__wrapper">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-3 offset-lg-2">
+      <div class="col-lg-3 offset-xl-2 offset-lg-1">
         <a href="" class="num">+7 (910) 340 80 09 </a>
-        <div class="days">
+        <div class="days d-none d-lg-block">
           <div class="day">Понедельник-пятница<span>10:00 - 18:00</span></div>
           <div class="day">Суббота<span>с 10:00 - 15:00</span></div>
           <div class="day">Воскресенье<span>выходной</span></div>
         </div>
       </div>
       <div class="col-lg-3">
-        <div class="address">Воронеж, Ипподромная, 1, строение 1<br>(вход в «Визовый центр»)</div>
+        <div class="address d-none d-lg-block">Воронеж, Ипподромная, 1, строение 1<br>(вход в «Визовый центр»)</div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-4">
         <a href="" class="mail">oooartemida2022@yandex.ru </a>
+        <div class="address d-block d-lg-none">Воронеж, Ипподромная, 1, строение 1<br>(вход в «Визовый центр»)</div>
         <a href="https://vk.com/msilyutina"><img src="images/dist/vk.svg" alt=""></a>
         <a href="t.me/gallery_vrn"><img src="images/dist/tg.svg" alt=""></a>
+        <div class="days d-block d-lg-none">
+          <div class="day">Понедельник-пятница<span>10:00 - 18:00</span></div>
+          <div class="day">Суббота<span>с 10:00 - 15:00</span></div>
+          <div class="day">Воскресенье<span>выходной</span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -466,7 +521,7 @@
   <div class="footer">
     <div class="container-fluid">
       <div class="row">
-        <div class="offset-lg-2 col-lg-8 d-flex justify-content-between info">
+        <div class="offset-xl-2 offset-lg-1 col-lg-10 col-xl-8 d-flex justify-content-between info">
           <a href="">Политика конфиденциальности </a>
           <p>Все права защищены ©</p>
         </div>
@@ -475,6 +530,13 @@
   </div>
 </div>
 </footer>
+
+<div class="modal">
+	<svg class="close-modal" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<rect x="2.12109" width="24" height="3" rx="1.5" transform="rotate(45 2.12109 0)" fill="#87A4D0"/>
+		<rect y="17.0165" width="24" height="3" rx="1.5" transform="rotate(-45 0 17.0165)" fill="#87A4D0"/>
+	</svg>		
+</div>
 
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/app.min.js"></script>

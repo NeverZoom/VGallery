@@ -39,6 +39,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		arrows: true,
 		prevArrow: '<svg class="slick-arrows slick-prev" width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="34.5" cy="34.5" r="34" stroke="#545973"/><path d="M44.428 27.068L27.25 35.09L44.428 43.112L43.714 44.624L23.26 35.09L43.714 25.556L44.428 27.068Z" fill="#545973"/></svg>',
 		nextArrow: '<svg class="slick-arrows slick-next" width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="34.5" cy="34.5" r="34" stroke="#545973"/><path d="M27.108 26.068L44.286 34.09L27.108 42.112L27.822 43.624L48.276 34.09L27.822 24.556L27.108 26.068Z" fill="#545973"/></svg>',
+		responsive: [
+			{
+				breakpoint: 1440,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			}
+		]
 	});
 
 	$('.reviews_slider').slick({
@@ -82,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const clone = parentSelector.innerHTML;
 		const firstElement = parentSelector.children[0];
 		let i = 0;
-		console.log(firstElement);
+		// console.log(firstElement);
 		parentSelector.insertAdjacentHTML('beforeend', clone);
 		parentSelector.insertAdjacentHTML('beforeend', clone);
 	
@@ -126,5 +142,27 @@ document.addEventListener('DOMContentLoaded', () => {
             $menu.removeClass("fixed").addClass("default");
         }
     });//scroll
+
+
+	$('.burger').on('click', () => {
+		$('.menu-modal').addClass('active');
+	});
+	$('.close').on('click', () => {
+		$('.menu-modal').removeClass('active');
+	});
+	$('.menu-modal a').on('click', () => {
+		$('.menu-modal').removeClass('active');
+	});
+
+	if (window.screen.width < 992) {
+		$('.close-modal').on('click', () => {
+			$('.modal').removeClass('active');
+			$('.modal img').remove();
+		});
+		$('.events_past__wrapper .item img').click(function() {
+			let image = $(this).attr('src');
+			$('.modal').addClass('active').append('<img src="'+image+'">');
+		});
+	}
 
 })

@@ -1,12 +1,908 @@
 +media-breakpoint-up(xs)
-  
+  .top-line__wrapper, .menu-modal
+    padding: 15px 0
+    img
+      width: 100%
+      max-width: 320px
+  .align-items-center-mobile
+    align-items: center
+  .button
+    padding: 10px 26px
+    font-size: 18px
+    line-height: 24px
+  .hero__wrapper
+    padding: 0px 0 49px 0
+    img
+      width: 60%
+      height: 100px
+      object-fit: cover
+    h1
+      font-size: 12px
+      line-height: 16px
+      min-width: 40%
+      span
+        font-size: 12px
+        line-height: 16px
+    .button
+      margin-bottom: 35px
+      margin-top: 25px
+      font-size: 16px
+      line-height: 21px
+    .marquee
+      font-size: 16px
+      line-height: 21px
+  .mission__wrapper
+    padding: 16px 0 49px 0
+    h2
+      margin-bottom: 17px
+    .button
+      font-size: 18px
+      line-height: 23px
+    ul
+      margin-bottom: 59px
+      padding-left: 55px
+      li
+        margin-bottom: 23px
+        font-size: 16px
+        line-height: 22px
+  .about__wrapper
+    padding: 21px 0 15px 0
+    .title
+      margin-bottom: 14px
+    .subtitle
+      margin-bottom: 14px
+      font-size: 16px
+      line-height: 22px
+    .bigtitle
+      font-size: 24px
+      line-height: 32px
+      margin-bottom: 23px
+    .p1
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 10px
+    .p2
+      font-size: 18px
+      line-height: 24px
+      margin-bottom: 62px
+    ul
+      margin-bottom: 62px
+      li
+        font-size: 14px
+        line-height: 18px
+        margin-bottom: 9px
+        &::before
+          left: -40px
+          top: 5px
+          font-size: 58px
+    .qty
+      flex-direction: row
+      flex-wrap: wrap
+      gap: 20px
+      justify-content: center
+      img
+        width: 112px
+        border: 3px solid #E2E4EC
+        margin-bottom: 0px
+        flex-basis: 112px
+      p.title
+        font-size: 14px
+        line-height: 18px
+        margin-bottom: 0px
+        flex-basis: calc(100% - 112px - 22px)
+      .content
+        flex-basis: 80%
+        font-size: 12px
+        line-height: 16px
+        &::before, &::after
+          font-size: 50px
+        &::before
+          top: 0
+          left: -40px
+        &::after
+          bottom: 0
+          right: -40px
+  h2.title
+    font-size: 18px
+    line-height: 24px
+  .events__wrapper
+    padding: 53px 0 0px 0
+    h2
+      margin-bottom: 9px
+    .accordion
+      .accordion-item
+        margin-top: 8px
+        margin-bottom: 55px
+        &::after
+          background: white
+          width: 24px
+          height: 24px
+          right: -0px
+          top: -12px
+          font-size: 20px
+        .heading
+          .title
+            font-size: 24px
+          span
+            font-size: 16px
+        .content
+          .content_wrapper
+            .block
+              margin-bottom: 52px
+              .date
+                margin-bottom: 10px
+                font-size: 18px
+                line-height: 24px
+                span
+                  font-size: 48px
+              img
+                width: 100%
+                margin-bottom: 10px
+              .title
+                margin-bottom: 10px
+                font-size: 24px
+                line-height: 32px
+              p
+                margin-bottom: 10px
+                font-size: 18px
+                line-height: 24px
+              .button
+                font-size: 24px
+                line-height: 37px
+  .jcc
+    justify-content: center
+  .press__wrapper
+    padding: 53px 0 64px 0
+    h2.title
+      margin-bottom: 20px
+    .date
+      margin-bottom: 5px
+      font-size: 16px
+      line-height: 21px
+    .title
+      margin-bottom: 5px
+      font-size: 14px
+      line-height: 18px
+    p
+      margin-bottom: 52px
+      font-size: 16px
+      line-height: 22px
+  .painters__wrapper, .painters__wrapper1
+    padding: 26px 0 32px 0
+    h2.title
+      margin-bottom: 12px
+    .painters_slider
+      margin-bottom: 60px
+      .item
+        gap: 26px
+        span
+          .title
+            font-size: 16px
+            line-height: 21px
+            margin-bottom: 0px
+          .info
+            font-size: 12px
+            line-height: 16px
+            margin-bottom: 16px
+          .button
+            font-size: 16px
+            line-height: 21px
+            margin-top: 16px
+        img
+          width: 100%
+  .painters__wrapper1
+    padding: 26px 0 29px 0
+    .painters_slider
+      margin-bottom: 60px
+    .whiteline
+      padding: 23px 0 14px 0
+      p
+        font-size: 12px
+        line-height: 16px
+  .slick-arrows
+    width: 26px
+    height: 26px
+    z-index: 10
+  .slick-prev
+    left: -12px
+  .slick-next
+    right: -12px
+  .events_past__wrapper
+    padding: 53px 0 32px 0
+    .title
+      margin-bottom: 23px
+    .event_slider
+      .item
+        img
+          padding: 0px 8px
+  .reviews__wrapper
+    padding: 53px 0 172px 0
+    h2.title
+      margin-bottom: 40px
+    .slick-prev, .slick-next
+      top: 10%
+    .slick-prev
+      left: -30px
+    .slick-next
+      right: -30px
+    .reviews_slider
+      .item
+        span
+          margin-bottom: 6px
+          font-size: 16px
+          line-height: 18px
+        .title
+          margin-bottom: 12px
+          font-size: 18px
+          line-height: 23px
+        .liltext
+          margin-bottom: 10px
+          font-size: 12px
+          line-height: 16px
+        p
+          font-size: 12px
+          line-height: 16px
+  .form__wrapper
+    padding: 53px 0 76px 0
+    h2.title
+      margin-bottom: 45px
+    form
+      flex-direction: column
+      gap: 12px
+      span
+        gap: 15px
+        label
+          gap: 7px
+          font-size: 10px
+        button
+          height: 57px
+      >input
+        background: rgba(255, 255, 255, 0.3)
+        width: 100%
+        padding: 18px 8px
+        font-size: 16px
+        line-height: 24px
+        &::placeholder
+          font-size: 16px
+          line-height: 24px
+  footer
+    padding: 40px 0 86px 0
+    .contact__wrapper
+      .info
+        gap: 17px
+        flex-direction: column
+        a
+          font-size: 12px
+          line-height: 16px
+          display: inline-block
+        p
+          font-size: 12px
+          line-height: 16px
+      .map
+        margin-bottom: 85px
+        margin-top: 13px
+        height: 353px
+        width: 99.9%
+      a.mail
+        font-size: 18px
+        line-height: 23px
+        margin-bottom: 21px
+      a
+        margin-right: 14px
+      .address
+        font-size: 14px
+        line-height: 18px
+        margin-bottom: 33px
+      .num
+        margin-bottom: 33px
+        font-size: 24px
+        line-height: 32px
+      .days
+        margin-top: 38px
+        gap: 7px
+        .day
+          font-size: 12px
+          line-height: 16px
+          span
+            font-size: 12px
+            line-height: 16px
+  .success
+    p
+      font-size: 24px
+      line-height: 31px
+      margin-bottom: 63px
+    .button
+      font-size: 18px
+      line-height: 23px
+
 +media-breakpoint-up(sm)
-  
 +media-breakpoint-up(md)
-  
 +media-breakpoint-up(lg)
-  
+  .jcc
+    justify-content: start  
+  .align-items-center-mobile
+    align-items: stretch
+  .top-line__wrapper, .menu-modal
+    padding: 40px 0
+    img
+      width: 100%
+      max-width: none
+    .social
+      span
+        a
+          font-size: 24px
+          line-height: 32px
+  .button
+    padding: 10px 26px
+    font-size: 18px
+    line-height: 24px
+  .menu__wrapper
+    padding: 38px 0 28px 0
+    nav
+      ul
+        gap: 24px
+        li
+          a
+            font-size: 16px
+            line-height: 18px
+            &::after
+              right: -12px
+  .hero__wrapper
+    padding: 63px 0 43px 0
+    img
+      width: 60%
+      height: auto
+    h1
+      font-size: 24px
+      line-height: 32px
+      min-width: 40%
+      span
+        font-size: 24px
+        line-height: 32px
+    .button
+      margin-bottom: 95px
+      margin-top: 80px
+      font-size: 36px
+      line-height: 48px
+    .marquee
+      font-size: 32px
+      line-height: 43px
+  .mission__wrapper
+    padding: 53px 0 111px 0
+    h2
+      margin-bottom: 64px
+    .button
+      font-size: 36px
+      line-height: 48px
+    ul
+      margin-bottom: 104px
+      padding-left: 2rem
+      li
+        margin-bottom: 32px
+        font-size: 21px
+        line-height: 28px
+  .about__wrapper
+    padding: 53px 0 63px 0
+    .title
+      margin-bottom: 28px
+    .subtitle
+      margin-bottom: 63px
+      font-size: 28px
+      line-height: 37px
+    .bigtitle
+      font-size: 56px
+      line-height: 76px
+      margin-bottom: 64px
+    .p1
+      font-size: 24px
+      line-height: 31px
+      margin-bottom: 46px
+    .p2
+      font-size: 18px
+      line-height: 24px
+      margin-bottom: 0px
+    ul
+      margin-bottom: 27px
+      li
+        font-size: 18px
+        line-height: 23px
+        margin-bottom: 24px
+        &::before
+          left: -45px
+          top: 5px
+          font-size: 74px
+    .qty
+      flex-direction: column
+      flex-wrap: nowrap
+      justify-content: start
+      img
+        width: 165px
+        border: 3px solid #E2E4EC
+        margin-bottom: 14px
+      p.title
+        font-size: 18px
+        line-height: 24px
+        margin-bottom: 57px
+      .content
+        font-size: 16px
+        line-height: 21px
+        &::before, &::after
+          font-size: 74px
+        &::before
+          top: 0
+          left: -60px
+        &::after
+          bottom: 0
+          right: -60px
+  h2.title
+    font-size: 36px
+    line-height: 48px
+  .events__wrapper
+    padding: 53px 0 185px 0
+    h2
+      margin-bottom: 80px
+    .accordion
+      .accordion-item
+        margin-top: 8px
+        margin-bottom: 55px
+        &::after
+          width: 44px
+          height: 44px
+          right: -44px
+          top: -22px
+          font-size: 30px
+        .heading
+          .title
+            font-size: 36px
+          span
+            font-size: 24px
+        .content
+          .content_wrapper
+            .block
+              margin-bottom: 55px
+              .date
+                margin-bottom: 10px
+                font-size: 18px
+                line-height: 24px
+                span
+                  font-size: 48px
+              img
+                width: 100%
+                margin-bottom: 10px
+              .title
+                margin-bottom: 10px
+                font-size: 24px
+                line-height: 32px
+              p
+                margin-bottom: 10px
+                font-size: 18px
+                line-height: 24px
+              .button
+                font-size: 24px
+                line-height: 37px
+  .press__wrapper
+    padding: 53px 0 117px 0
+    h2.title
+      margin-bottom: 52px
+    .date
+      margin-bottom: 5px
+      font-size: 16px
+      line-height: 21px
+    .title
+      margin-bottom: 5px
+      font-size: 24px
+      line-height: 32px
+    p
+      margin-bottom: 52px
+      font-size: 24px
+      line-height: 32px
+  .painters__wrapper, .painters__wrapper1
+    padding: 53px 0 160px 0
+    h2.title
+      margin-bottom: 114px
+    .painters_slider
+      margin-bottom: 66px
+      .item
+        gap: 26px
+        span
+          .title
+            font-size: 28px
+            line-height: 37px
+            margin-bottom: 8px
+          .info
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 33px
+          .button
+            font-size: 22px
+            margin-top: 0
+            line-height: 29px
+        img
+          width: 40%
+  .painters__wrapper1
+    padding: 53px 0 29px 0
+    .painters_slider
+      margin-bottom: 206px
+    .whiteline
+      padding: 23px 0 38px 0
+      p
+        font-size: 18px
+        line-height: 23px
+  .events_past__wrapper
+    padding: 53px 0 140px 0
+    .title
+      margin-bottom: 59px
+    .event_slider
+      .item
+        img
+          padding: 0px 6px
+  .reviews__wrapper
+    padding: 53px 0 103px 0
+    h2.title
+      margin-bottom: 105px
+    .slick-prev, .slick-next
+      top: 50%
+    .slick-prev
+      left: -88px
+    .slick-next
+      right: -88px
+    .reviews_slider
+      .item
+        span
+          margin-bottom: 25px
+          font-size: 22px
+          line-height: 29px
+        .title
+          margin-bottom: 17px
+          font-size: 28px
+          line-height: 37px
+        .liltext
+          margin-bottom: 37px
+          font-size: 16px
+          line-height: 21px
+        p
+          font-size: 18px
+          line-height: 24px
+  .form__wrapper
+    padding: 53px 0 64px 0
+    h2.title
+      margin-bottom: 40px
+    form
+      flex-direction: row
+      gap: 12px
+      span
+        gap: 25px
+        label
+          gap: 10px
+          font-size: 16px
+        button
+          height: 46px
+      >input
+        background: none
+        width: auto
+        padding: 10px 12px
+        font-size: 18px
+        line-height: 24px
+        &::placeholder
+          font-size: 18px
+          line-height: 24px
+  footer
+    padding: 111px 0 113px 0
+    .contact__wrapper
+      .info
+        flex-direction: row
+        a
+          font-size: 18px
+          line-height: 24px
+        p
+          font-size: 18px
+          line-height: 24px
+      .map
+        margin-bottom: 47px
+        margin-top: 59px
+        height: 600px
+        width: 99.9%
+      a.mail
+        font-size: 16px
+        line-height: 21px
+        margin-bottom: 19px
+      a
+        margin-right: 18px
+      .address
+        font-size: 16px
+        line-height: 21px
+        margin-bottom: 0
+      .num
+        margin-bottom: 31px
+        font-size: 24px
+        line-height: 32px
+      .days
+        gap: 10px
+        margin-top: 0px
+        .day
+          font-size: 12px
+          line-height: 16px
+          span
+            font-size: 12px
+            line-height: 16px
+  .slick-arrows
+    width: 69px
+    height: 69px
+  .slick-prev
+    left: -88px
+  .slick-next
+    right: -88px
+  .success
+    p
+      font-size: 42px
+      line-height: 56px
+      margin-bottom: 50px
+    .button
+      font-size: 36px
+      line-height: 48px
+
 +media-breakpoint-up(xl)
-  
+  .top-line__wrapper, .menu-modal
+    padding: 17px 0 25px 0
+    .social
+      span
+        a
+          font-size: 24px
+          line-height: 32px
+  .menu__wrapper
+    padding: 38px 0 28px 0
+    nav
+      ul
+        gap: 64px
+        li
+          a
+            font-size: 24px
+            line-height: 32px
+            &::after
+              right: -32px
+  .hero__wrapper
+    padding: 63px 0 43px 0
+    img
+      width: auto
+    h1
+      font-size: 32px
+      line-height: 43px
+      min-width: none
+      span
+        font-size: 24px
+        line-height: 32px
+    .button
+      margin-bottom: 140px
+      margin-top: 90px
+      font-size: 36px
+      line-height: 48px
+    .marquee
+      font-size: 32px
+      line-height: 43px
+  .mission__wrapper
+    padding: 53px 0 124px 0
+    h2
+      margin-bottom: 56px
+    .button
+      font-size: 36px
+      line-height: 48px
+    ul
+      margin-bottom: 130px
+      li
+        margin-bottom: 32px
+        font-size: 28px
+        line-height: 37px
+  .about__wrapper
+    padding: 53px 0 77px 0
+    .title
+      margin-bottom: 30px
+    .subtitle
+      margin-bottom: 65px
+      font-size: 36px
+      line-height: 48px
+    .bigtitle
+      font-size: 66px
+      line-height: 88px
+      margin-bottom: 61px
+    .p1
+      font-size: 28px
+      line-height: 37px
+      margin-bottom: 46px
+    .p2
+      font-size: 24px
+      line-height: 32px
+    ul
+      margin-bottom: 75px
+      li
+        font-size: 20px
+        line-height: 27px
+        margin-bottom: 24px
+        &::before
+          left: -45px
+          top: 5px
+          font-size: 74px
+    .qty
+      img
+        width: 165px
+        border: 3px solid #E2E4EC
+        margin-bottom: 14px
+      p.title
+        font-size: 18px
+        line-height: 24px
+        margin-bottom: 57px
+      .content
+        font-size: 21px
+        line-height: 28px
+        &::before, &::after
+          font-size: 74px
+        &::before
+          top: 0
+          left: -60px
+        &::after
+          bottom: 0
+          right: -60px
+  h2.title
+    font-size: 42px
+    line-height: 56px
+  .events__wrapper
+    padding: 53px 0 185px 0
+    h2
+      margin-bottom: 90px
+    .accordion
+      .accordion-item
+        margin-top: 8px
+        margin-bottom: 55px
+        &::after
+          width: 44px
+          height: 44px
+          right: -44px
+          top: -22px
+          font-size: 30px
+        .heading
+          .title
+            font-size: 36px
+          span
+            font-size: 24px
+        .content
+          .content_wrapper
+            .block
+              margin-bottom: 63px
+              .date
+                margin-bottom: 10px
+                font-size: 18px
+                line-height: 24px
+                span
+                  font-size: 48px
+              img
+                width: 100%
+                margin-bottom: 10px
+              .title
+                margin-bottom: 10px
+                font-size: 24px
+                line-height: 32px
+              p
+                margin-bottom: 10px
+                font-size: 18px
+                line-height: 24px
+              .button
+                font-size: 28px
+                line-height: 37px
+  .painters__wrapper, .painters__wrapper1
+    padding: 130px 0 90px 0
+    h2.title
+      margin-bottom: 21px
+    .painters_slider
+      margin-bottom: 66px
+      .item
+        gap: 88px
+        span
+          .title
+            font-size: 42px
+            line-height: 56px
+            margin-bottom: 13px
+          .info
+            font-size: 32px
+            line-height: 43px
+            margin-bottom: 38px
+          .button
+            font-size: 22px
+            line-height: 29px
+        img
+          width: 50%
+  .painters__wrapper1
+    padding: 53px 0 29px 0
+    .painters_slider
+      margin-bottom: 66px
+    .whiteline
+      padding: 23px 0 28px 0
+      p
+        font-size: 28px
+        line-height: 37px
+  .events_past__wrapper
+    padding: 53px 0 140px 0
+    .title
+      margin-bottom: 59px
+    .event_slider
+      .item
+        img
+          padding: 0px 20px
+  .reviews__wrapper
+    padding: 53px 0 140px 0
+    h2.title
+      margin-bottom: 105px
+    .reviews_slider
+      .item
+        span
+          margin-bottom: 17px
+          font-size: 28px
+          line-height: 37px
+        .title
+          margin-bottom: 6px
+          font-size: 36px
+          line-height: 48px
+        .liltext
+          margin-bottom: 34px
+          font-size: 18px
+          line-height: 24px
+        p
+          font-size: 24px
+          line-height: 32px
+  .form__wrapper
+    padding: 53px 0 64px 0
+    h2.title
+      margin-bottom: 23px
+    form
+      gap: 24px
+      span
+        gap: 25px
+        label
+          gap: 19px
+          font-size: 16px
+        button
+          height: 54px
+      >input
+        padding: 10px 12px
+        font-size: 24px
+        line-height: 32px
+        &::placeholder
+          font-size: 24px
+          line-height: 32px
+  footer
+    padding: 111px 0 122px 0
+    .contact__wrapper
+      .info
+        a
+          font-size: 18px
+          line-height: 24px
+        p
+          font-size: 18px
+          line-height: 24px
+      .map
+        margin-bottom: 54px
+        margin-top: 76px
+        height: 600px
+        width: 100%
+      a.mail
+        font-size: 24px
+        line-height: 32px
+        margin-bottom: 26px
+      a
+        margin-right: 14px
+      .address
+        font-size: 24px
+        line-height: 32px
+      .num
+        margin-bottom: 74px
+        font-size: 36px
+        line-height: 48px
+      .days
+        gap: 15px
+        .day
+          font-size: 18px
+          line-height: 24px
+          span
+            font-size: 21px
+            line-height: 28px
+
 @media (min-width: 1440px)
   
