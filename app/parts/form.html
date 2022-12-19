@@ -1,15 +1,19 @@
-<div class="form__wrapper">
+<div class="form__wrapper" id="form">
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-lg-8 offset-lg-2">
         <h2 class="title">Есть вопросы?<br> Мы с удовольствием ответим!</h2>
         <form action="">
-          <input type="text" required placeholder="Имя:">
-          <input type="text" required placeholder="+7">
+          <input type="text" required placeholder="Имя:" name="fio">
+          <input type="text" required placeholder="+7" name="phone">
           <span>
             <button class="button">ЗАКАЗАТЬ ЗВОНОК</button>
             <label><input type="checkbox">Нажимая «Заказать звонок», Вы соглашаетесь с Политикой конфиденциальности</label>
           </span>
+
+          <input type="hidden" value="название проекта" name="project_name">
+          <input type="hidden" value="почта администратора" name="admin_email">
+          <input type="hidden" value="тема письма" name="form_subject">
         </form>
       </div>
     </div>
@@ -19,5 +23,5 @@
 
 <div class="success">
   <p>Ваша заявка успешно отправлена.<br>Мы свяжемся с Вами!</p>
-  <a href="#" class="button">ПОДРОБНЕЕ</a>
+  <a href="#form" class="button">ПОДРОБНЕЕ</a>
 </div>
